@@ -20,7 +20,7 @@ jobs:
       - name: Checkout GH repository
         uses: actions/checkout@v2
       - name: Run coding-style
-        run: check.sh . /tmp
+        run: check.sh .. /tmp
       - name: Create annotation
         run: |
           input=/tmp/coding-style-reports.log
